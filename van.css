@@ -1,0 +1,161 @@
+/* Style global pour l'ensemble du site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* En-tête avec image de fond */
+.header-vans {
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.header-vans .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Filtre sombre pour améliorer la lisibilité */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header-vans h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-vans p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Description des vans */
+.description-vans {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #2f6be3;
+    color: white;
+}
+
+.description-vans h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.description-vans p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Section des types de vans */
+.types-vans {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.types-vans h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.van-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.van-type {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.van-type:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.van-type img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.van-type h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.van-type p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.van-type strong {
+    font-size: 18px;
+    color: #ff6f61;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.reservation-bar {
+   background-color:  #f4f4f4;
+    color: rgb(8, 0, 0);
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+   ;
+}
+
+.reservation-bar a {
+    color: #ffffff;
+    background-color: #007bff; /* Bleu pour le bouton */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reservation-bar a:hover {
+    background-color: #0056b3; /* Couleur plus foncée lors du survol */
+    transform: scale(1.05); /* Effet zoom au survol */
+}
+
+
+footer p {
+    font-size: 16px;
+
+}

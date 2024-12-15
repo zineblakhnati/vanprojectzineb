@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header class="header-contact">
+        <div class="overlay">
+            <h1>Contactez-nous</h1>
+            <p>Réservez votre van en quelques étapes simples. Remplissez le formulaire et commencez votre aventure.</p>
+        </div>
+    </header>
+
+    <!-- Formulaire de réservation -->
+    <section class="contact-form">
+        <h2>Réservez votre van</h2>
+        <form action="" method="POST">
+            <!-- Ville de départ et d'arrivée -->
+              <!-- Nom et prénom -->
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+            </div>
+            <div class="form-group">
+                <label for="tele">TELEPHONE:</label>
+                <input type="tel" id="tel" name="prenom" placeholder="Entrez votre numero de telephone" required>
+                
+            </div>
+            <div class="form-group">
+                <label for="depart">Ville de départ :</label>
+                <select id="depart" name="depart">
+                    <option value="Casablanca">Casablanca</option>
+                    <option value="Marrakech">Marrakech</option>
+                    <option value="Rabat">Rabat</option>
+                    <option value="Fes">Fes</option>
+                    <option value="Agadir">Agadir</option>
+                    <option value="Tangier">Tangier</option>
+                    <option value="Essaouira">Essaouira</option>
+                    <option value="Ouarzazate">Ouarzazate</option>
+                    <option value="Chefchaouen">Chefchaouen</option>
+                    <option value="Merzouga">Merzouga</option>
+                    <!-- Ajoutez d'autres villes ici -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="arrivee">Ville d'arrivée :</label>
+                <select id="arrivee" name="arrivee">
+                    <option value="Casablanca">Casablanca</option>
+                    <option value="Marrakech">Marrakech</option>
+                    <option value="Rabat">Rabat</option>
+                    <option value="Fes">Fes</option>
+                    <option value="Agadir">Agadir</option>
+                    <option value="Tangier">Tangier</option>
+                    <option value="Essaouira">Essaouira</option>
+                    <option value="Ouarzazate">Ouarzazate</option>
+                    <option value="Chefchaouen">Chefchaouen</option>
+                    <option value="Merzouga">Merzouga</option>
+                    <!-- Ajoutez d'autres villes ici -->
+                </select>
+            </div>
+
+           
+
+            <!-- Dates -->
+            <div class="form-group">
+                <label for="date-debut">Date de début :</label>
+                <input type="date" id="date-debut" name="date-debut" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date-fin">Date de fin :</label>
+                <input type="date" id="date-fin" name="date-fin" required>
+            </div>
+
+            <!-- Nombre de passagers -->
+            <div class="form-group">
+                <label for="passagers">Nombre de passagers :</label>
+                <input type="number" id="passagers" name="passagers" placeholder="Entrez le nombre de passagers" min="1" max="10" required>
+            </div>
+
+            <!-- Type de van -->
+            <div class="form-group">
+                <label for="type-van">Type de van :</label>
+                <select id="type-van" name="type-van" required>
+                    <option value="Euro Van">Euro Van</option>
+                    <option value="Van Aventure">Van Aventure</option>
+                    <option value="Van Horizon">Van Horizon</option>
+                    <option value="Van Voyage">Van Voyage</option>
+                    <option value="Van Familiale">Van Familiale</option>
+                    <option value="Van En Vol">Van En Vol</option>
+                </select>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Réserver maintenant</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Location de Vans - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header, section, footer {
+    margin: 20px;
+}
+
+/* En-tête */
+.header-inspiration {
+    position: relative;
+    background-color: #545252;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.header-inspiration .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-inspiration h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-inspiration p {
+    font-size: 20px;
+}
+
+/* Section Inspiration */
+.inspiration-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.inspiration-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.inspiration-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.inspiration-card:hover {
+    transform: scale(1.05);
+}
+
+.inspiration-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.inspiration-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.inspiration-card p {
+    font-size: 16px;
+}
+
+/* Section Noter Votre Expérience */
+.experience-rating {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.experience-rating h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.experience-rating p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.rating-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rating-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.rating-form select, .rating-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.rating-form button.submit-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-form button.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-inspiration h1 {
+        font-size: 36px;
+    }
+
+    .inspiration-section h2 {
+        font-size: 28px;
+    }
+
+    .inspiration-card h3 {
+        font-size: 20px;
+    }
+
+    .inspiration-card p {
+        font-size: 14px;
+    }
+
+    .experience-rating h2 {
+        font-size: 28px;
+    }
+
+    .rating-form button.submit-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
